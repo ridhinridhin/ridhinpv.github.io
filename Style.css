@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-image img {
+  width: 280px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 50% / 40%;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about img {
+  width: 260px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 50% / 40%;
+}
+
+/* BACKGROUND */
+.background-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* ART */
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.art-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* QUOTE */
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.quote p {
+  font-size: 28px;
+  font-family: 'Playfair Display', serif;
+}
+
+.quote img {
+  width: 260px;
+  height: 360px;
+  border-radius: 50% / 40%;
+  object-fit: cover;
+}
+
+/* MORE WORK */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.work-grid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* CONTACT */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin: 30px 0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 6%;
+  }
+
+  .hero,
+  .about,
+  .quote {
+    flex-direction: column;
+    text-align: center;
+  }
+}
