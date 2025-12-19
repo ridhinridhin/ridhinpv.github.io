@@ -124,6 +124,26 @@ section {
   border-radius: 12px;
 }
 
+.work-grid video{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* FULLSCREEN FIX */
+.work-grid video:fullscreen {
+  object-fit: contain;
+  background: black;
+  border-radius: 0;
+}
+
+.work-grid video:-webkit-full-screen {
+  object-fit: contain;
+  background: black;
+  border-radius: 0;
+}
+
 /* CONTACT */
 .contact-grid {
   display: grid;
@@ -145,3 +165,4 @@ section {
     text-align: center;
   }
 }
+
